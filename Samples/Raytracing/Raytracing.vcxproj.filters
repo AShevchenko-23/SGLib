@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SGX">
+      <UniqueIdentifier>{5ea5e080-c79e-42a1-8832-a0f4d8965192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="RaytracingSample.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="SGX\SGHelpers.cpp">
+      <Filter>SGX</Filter>
+    </ClCompile>
+    <ClCompile Include="SGX\SGSample.cpp">
+      <Filter>SGX</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="RaytracingLib.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RaytracingSample.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SGX\SGHelpers.h">
+      <Filter>SGX</Filter>
+    </ClInclude>
+    <ClInclude Include="SGX\SGSample.h">
+      <Filter>SGX</Filter>
+    </ClInclude>
+    <ClInclude Include="SGX\Box.h">
+      <Filter>SGX</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Readme.md" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Subresources", "Subresources\Subresources.vcxproj", "{1489684E-FBC8-40A6-9BFF-CB64170DB819}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Raytracing", "Raytracing\Raytracing.vcxproj", "{A776776A-BC9F-4C77-8F57-903B20929CCD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AsyncCompute", "AsyncCompute\AsyncCompute.vcxproj", "{D2881647-70AF-4FC5-8755-D19998C2C89B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Queries", "Queries\Queries.vcxproj", "{B56D531E-B027-4038-B76B-41DD48BEF7B5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MeshletRender", "MeshletRender\MeshletRender.vcxproj", "{DE49093D-CFF9-4C74-AA27-F1301453D9AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1489684E-FBC8-40A6-9BFF-CB64170DB819}.Debug|x64.ActiveCfg = Debug|x64
+		{1489684E-FBC8-40A6-9BFF-CB64170DB819}.Debug|x64.Build.0 = Debug|x64
+		{1489684E-FBC8-40A6-9BFF-CB64170DB819}.Release|x64.ActiveCfg = Release|x64
+		{1489684E-FBC8-40A6-9BFF-CB64170DB819}.Release|x64.Build.0 = Release|x64
+		{A776776A-BC9F-4C77-8F57-903B20929CCD}.Debug|x64.ActiveCfg = Debug|x64
+		{A776776A-BC9F-4C77-8F57-903B20929CCD}.Debug|x64.Build.0 = Debug|x64
+		{A776776A-BC9F-4C77-8F57-903B20929CCD}.Release|x64.ActiveCfg = Release|x64
+		{A776776A-BC9F-4C77-8F57-903B20929CCD}.Release|x64.Build.0 = Release|x64
+		{D2881647-70AF-4FC5-8755-D19998C2C89B}.Debug|x64.ActiveCfg = Debug|x64
+		{D2881647-70AF-4FC5-8755-D19998C2C89B}.Debug|x64.Build.0 = Debug|x64
+		{D2881647-70AF-4FC5-8755-D19998C2C89B}.Release|x64.ActiveCfg = Release|x64
+		{D2881647-70AF-4FC5-8755-D19998C2C89B}.Release|x64.Build.0 = Release|x64
+		{B56D531E-B027-4038-B76B-41DD48BEF7B5}.Debug|x64.ActiveCfg = Debug|x64
+		{B56D531E-B027-4038-B76B-41DD48BEF7B5}.Debug|x64.Build.0 = Debug|x64
+		{B56D531E-B027-4038-B76B-41DD48BEF7B5}.Release|x64.ActiveCfg = Release|x64
+		{B56D531E-B027-4038-B76B-41DD48BEF7B5}.Release|x64.Build.0 = Release|x64
+		{DE49093D-CFF9-4C74-AA27-F1301453D9AA}.Debug|x64.ActiveCfg = Debug|x64
+		{DE49093D-CFF9-4C74-AA27-F1301453D9AA}.Debug|x64.Build.0 = Debug|x64
+		{DE49093D-CFF9-4C74-AA27-F1301453D9AA}.Release|x64.ActiveCfg = Release|x64
+		{DE49093D-CFF9-4C74-AA27-F1301453D9AA}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B74A80B-9D74-426D-A32B-F0E32DAEA972}
+	EndGlobalSection
+EndGlobal
