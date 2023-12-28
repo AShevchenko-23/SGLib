@@ -12,9 +12,6 @@
 
 #pragma once
 
-
-#define SG_BINDING_LAYOUT 0
-
 #include "CoreTypes.h"
 #include "Format.h"
 #include "Resource.h"
@@ -773,7 +770,7 @@ public:
         ISGCommandList** ppOutCommandList) = 0;
 
     virtual SG_RESULT SG_CALL FinishCommandList(
-        ISGCommandList* pPassContext) = 0;
+        ISGCommandList* pCommandList) = 0;
 
     virtual SG_RESULT SG_CALL GetTimestampFrequency(
         SgU8 queueIndex,
