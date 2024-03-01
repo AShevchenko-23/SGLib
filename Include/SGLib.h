@@ -1,7 +1,7 @@
 
 //*********************************************************
 //
-// Copyright (c) 2023 Aleksei Shevchenko.
+// Copyright (c) 2024 Aleksei Shevchenko.
 // This code is licensed under the MIT License (MIT).
 // THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
 // ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
@@ -906,6 +906,9 @@ public:
     virtual void SG_CALL SetPipelineState(
         ISGPipelineState* pPipelineState) = 0;
 
+    virtual void SG_CALL SetInputLayout(
+        ISGInputLayout* pInputLayout) = 0;
+
     virtual void SG_CALL SetShadingRate(
         SG_SHADING_RATE baseShadingRate,
         SG_SHADING_RATE_COMBINER const* pCombiners) = 0;
@@ -1180,6 +1183,10 @@ typedef struct ISGCommandListVtbl
     void (SG_CALL *SetPipelineState)(
         ISGCommandList* pThis,
         ISGPipelineState* pPipelineState);
+
+    void (SG_CALL *SetInputLayout)(
+        ISGCommandList* pThis,
+        ISGInputLayout* pInputLayout);
 
     void (SG_CALL *SetShadingRate)(
         SG_SHADING_RATE baseShadingRate,

@@ -1,6 +1,6 @@
 //*********************************************************
 //
-// Copyright (c) 2023 Aleksei Shevchenko.
+// Copyright (c) 2024 Aleksei Shevchenko.
 // This code is licensed under the MIT License (MIT).
 // THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
 // ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
@@ -18,8 +18,6 @@
 #include "SGX/SGSample.h"
 #include <DirectXMath.h>
 #include "Model.h"
-
-#include <Include/InternalDebug.h>
 
 class MeshletRender : public ISGSample
 {
