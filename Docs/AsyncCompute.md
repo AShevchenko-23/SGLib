@@ -38,7 +38,7 @@ pExecCtx->EndFrame();
 ```
 ## Restrictions
 All restrictions of the asynchronous execution are mainly related to resource access order.
-As it was noticed above, the binding of resources leads to switch their states.
+As it was noticed above, the binding of resources leads their states to be changed.
 The main restriction is incapatibility of read and write states.
 Thus, the render must avoid using one subresource for writing and reading simultaneously (See [Async compute sample](../Samples/AsyncCompute/Readme.md)).
 In addition, SGLib tracks a history for every resource that was used in a frame and resolves its transitions when the frame ends.\
@@ -106,7 +106,7 @@ This case leads to search for a capable queue for resolving that might make to s
 Try to avoid this case.
 </td>
 
-<td style="max-width: 100px"><b>YES, but not recommended</b></td>
+<td style="max-width: 100px"><b>YES</b></td>
 
 <td>
 <img src="Images/mq_tr6.png" style="max-width: 320px"/><br>

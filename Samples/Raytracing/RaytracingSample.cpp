@@ -124,6 +124,7 @@ void RaytracingSample::OnDestroy()
     SG_RELEASE(m_pOutTexture);
 
     SG_RELEASE(m_pSwapChain);
+    SG_RELEASE(m_pExecutionContext);
     SG_RELEASE(m_pDevice);
 }
 

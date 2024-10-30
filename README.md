@@ -1,4 +1,4 @@
-# SGLib 0.0.8.1 (Alpha)
+# SGLib 0.0.8.5 (Alpha)
 
 SGLib is a graphics middleware library for C/C++. Based on D3D12 it provides APIs close to D3D11 in a couple with feautures and capabilities of modern hardware, like ray tracing, async compute, async scheduling, meshlet shading, variable rate shading etc.
 It uses best practices of graphics APIs to hide low-level management and make developers to focus on features and algorithms. See [Getting started](Docs/Tutorial.md) sections for more details.
@@ -14,6 +14,11 @@ It uses best practices of graphics APIs to hide low-level management and make de
 * Meshlet rendering;
 
 ## Release notes
+### 0.0.8.5
+* Fixed API errors on NVidia Ada adapters related to getting D3D12_GPU_DESCRIPTOR_HANDLE;
+* Fixed crash when attempt to override input layout for PSO created without an input layout
+* Perf-improvements
+
 ### 0.0.8.1
 * Fixed sync interval when SG_SWAP_CHAIN_FLAG_ALLOW_TEARING flag is set;
 * Minor optimizations;
