@@ -12,6 +12,10 @@ if (SGLibInitialize(&debugConfig) != SG_OK)
     throw std::exception("SG initializing failed");
 ```
 
+### Live resource reports
+Device created with the debug layer and running on __\*dev__ build reports about unreleased resources before being destroyed.
+Note: as ISGDevice querries ID3D12DebugDevice interface from ID3D12Device to invoke ReportLiveDeviceObjects, the ID3D12Device object's refCount of 2 is expected.
+
 ## Debug additional functionality
 
 ```SG_DEVICE_DESC``` allows an application to get some additional features to debug its runtime:

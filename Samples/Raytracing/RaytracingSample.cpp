@@ -72,6 +72,8 @@ void RaytracingSample::OnInit()
     if (SgCreateDevice(pAdapter, &deviceDesc, &m_pDevice) != SG_OK)
         throw std::exception("Failed device object creation");
 
+    SG_RELEASE(pAdapter);
+
     m_pDevice->GetExecutionContext(&m_pExecutionContext);
 
     SG_SWAP_CHAIN_DESC swapChainDesc{};

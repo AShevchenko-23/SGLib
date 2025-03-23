@@ -94,6 +94,8 @@ void AsyncComputeSample::OnInit()
         if (SgCreateDevice(pAdapter, &deviceDesc, &m_pDevice) != SG_OK)
             throw std::exception("Failed to create device object");
 
+        SG_RELEASE(pAdapter);
+
         m_pDevice->GetExecutionContext(&m_pExecutionContext);
     }
 

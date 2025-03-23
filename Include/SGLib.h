@@ -891,6 +891,14 @@ public:
         float depthValue, 
         SgU8 stencilValue) = 0;
 
+    virtual void SG_CALL ClearUnorderedAccessViewUint(
+        ISGUnorderedAccessView* pUAV,
+        const SgU32 values[4]) = 0;
+
+    virtual void SG_CALL ClearUnorderedAccessViewFloat(
+        ISGUnorderedAccessView* pUAV,
+        const float values[4]) = 0;
+
     virtual void SG_CALL SetStencilRef(
         SgU8 stencilRef) = 0;
 
@@ -1164,6 +1172,16 @@ typedef struct ISGCommandListVtbl
         SG_CLEAR_FLAGS flags, 
         float depthValue, 
         SgU8 stencilValue);
+
+    void (SG_CALL* ClearUnorderedAccessViewUint)(
+        ISGCommandList* pThis,
+        ISGUnorderedAccessView* pUAV,
+        const SgU32 values[4]);
+
+    void (SG_CALL* ClearUnorderedAccessViewFloat)(
+        ISGCommandList* pThis,
+        ISGUnorderedAccessView* pUAV,
+        const float values[4]);
 
     void (SG_CALL *SetStencilRef)(
         ISGCommandList* pThis,

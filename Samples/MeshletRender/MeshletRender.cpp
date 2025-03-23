@@ -67,10 +67,10 @@ void MeshletRender::OnInit()
     deviceDesc.pExecutionContextDesc = &execCtxDesc;
 
     if (SgCreateDevice(pAdapter, &deviceDesc, &m_pDevice) != SG_OK)
-    {
         throw std::exception("Failed device object creation");
-    }
-    pAdapter->Release();
+
+    SG_RELEASE(pAdapter);
+
     m_pDevice->GetExecutionContext(&m_pExecutionContext);
 
     SG_SWAP_CHAIN_DESC swapChainDesc{};
