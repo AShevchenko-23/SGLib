@@ -1465,7 +1465,12 @@ SG_API_FUNC SG_RESULT SG_CALL SgCreateSwapChain(
     SG_SWAP_CHAIN_DESC const*   pDesc,
     ISGSwapChain**              ppSwapChain);
 
+// Returns the format size in bytes.
+// Attention: Use SgGetFormatSizeBits for BC formats, as the pixel size may be less than 1 byte.
 SG_API_FUNC SgU32 SG_CALL SgGetFormatSize(SG_FORMAT format);
+
+// Returns the format size in bits
+SG_API_FUNC SgU32 SG_CALL SgGetFormatSizeBits(SG_FORMAT format);
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
 } // extern "C"
